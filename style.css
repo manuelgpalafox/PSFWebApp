@@ -54,6 +54,7 @@ nav {
 
 nav ul {
     float: right;
+    margin-bottom: 0;
 }
 
 nav ul li {
@@ -101,6 +102,35 @@ li a:hover {
     background-size: cover;
     background-position: center center;
     height: calc(100vh - 200px);
+}
+
+.grey-bgd{
+    padding-top: 3%;
+    background-color: #f2f0f1ff;
+}
+
+.reduced{
+    width: 70%;
+    max-width: 750px;
+}
+
+.reduced h1{
+    text-align: center;
+    margin-bottom: 2%;
+}
+
+.reduced p{
+    padding-bottom: 2%;
+}
+
+.palito{
+    height: 3rem;
+    width: 6px;
+    border-top-right-radius: 1vh;
+    border-top-left-radius: 1vh;
+    position: relative;
+    left: 50%;
+    background-color: #2b3990;
 }
 
 @media (max-width: 952px) {
