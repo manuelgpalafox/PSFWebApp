@@ -104,26 +104,31 @@ li a:hover {
     height: calc(100vh - 200px);
 }
 
-.grey-bgd{
+.grey-bgd {
     padding-top: 3%;
     background-color: #f2f0f1ff;
 }
 
-.reduced{
+.reduced {
     width: 70%;
     max-width: 750px;
 }
 
-.reduced h1{
+.reduced-md {
+    width: 90%;
+    max-width: 800px;
+}
+
+.reduced h1 {
     text-align: center;
     margin-bottom: 2%;
 }
 
-.reduced p{
+.reduced p {
     padding-bottom: 2%;
 }
 
-.palito{
+.stick {
     height: 3rem;
     width: 6px;
     border-top-right-radius: 1vh;
@@ -133,6 +138,51 @@ li a:hover {
     background-color: #2b3990;
 }
 
+.stick-inv {
+    height: 3rem;
+    width: 6px;
+    border-bottom-right-radius: 1vh;
+    border-bottom-left-radius: 1vh;
+    position: relative;
+    left: 50%;
+    background-color: #2b3990;
+}
+
+.blue-bgd {
+    background-color: #d1dce8ff;
+}
+
+.circle {
+    background-color: #d1dce8ff;
+    width: 195px;
+    height: 195px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ring {
+    background-color: white;
+    width: 201px;
+    height: 201px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.figure {
+    background-color: white;
+    margin: 0;
+    width: 182px;
+    height: 182px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 @media (max-width: 952px) {
     .enlace {
         padding-left: 20px;
@@ -140,6 +190,16 @@ li a:hover {
 
     nav ul li a {
         font-size: 16px;
+    }
+
+    #categories-baloons {
+        display: block!important;
+    }
+
+    .card{
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 }
 
@@ -191,4 +251,6 @@ li a:hover {
     #check:checked~ul {
         left: 0;
     }
+
+
 }
