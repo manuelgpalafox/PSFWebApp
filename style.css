@@ -6,6 +6,10 @@
     box-sizing: border-box;
 }
 
+.navigation {
+    background: #f2f0f1ff;
+}
+
 nav {
     background: #f2f0f1ff;
     height: 112px;
@@ -32,7 +36,7 @@ nav {
 }
 
 .logo-container {
-    height: 100%;
+    height: 120%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -50,6 +54,11 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.card{
+    background-color: transparent;
+    border: none;
 }
 
 nav ul {
@@ -116,7 +125,7 @@ li a:hover {
 
 .reduced-md {
     width: 90%;
-    max-width: 800px;
+    max-width: 850px;
 }
 
 .reduced h1 {
@@ -152,6 +161,10 @@ li a:hover {
     background-color: #d1dce8ff;
 }
 
+#how-to-nominate {
+    background-color: #f2f0f1ff;
+}
+
 .circle {
     background-color: #d1dce8ff;
     width: 195px;
@@ -183,6 +196,53 @@ li a:hover {
     align-items: center;
 }
 
+.card h3 {
+    color: white;
+}
+
+.card:hover .ring,
+.card:hover .figure {
+    background-color: #2b3990;
+}
+
+.card:hover h3,
+.card:hover h3 {
+    color: #2b3990;
+}
+
+.nom-1 {
+    background-color: transparent;
+    width: 262px;
+    height: 262px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid #4f8fcc;
+}
+
+.nom-1 img {
+    width: 241px;
+    height: 241px;
+    border-radius: 50%;
+}
+
+.h2-reduce h2 {
+    font-size: 2.5rem;
+}
+
+#our-process {
+    background-color: #f2f0f1ff;
+}
+
+#our-process .container .container .card{
+    width: 33%;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 @media (max-width: 952px) {
     .enlace {
         padding-left: 20px;
@@ -193,10 +253,10 @@ li a:hover {
     }
 
     #categories-baloons {
-        display: block!important;
+        display: block !important;
     }
 
-    .card{
+    .card {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -210,7 +270,23 @@ li a:hover {
     }
 
     .logo-container {
+        height: 100%;
         padding-left: 5%;
+    }
+
+    #how-to-nominate .container {
+        display: block !important;
+    }
+
+    .nom-1 {
+        background-color: transparent;
+        width: 252px;
+        height: 252px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 5px solid #4f8fcc;
     }
 
     .separator {
