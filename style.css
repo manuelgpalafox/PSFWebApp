@@ -107,7 +107,7 @@ li a:hover {
 }
 
 .banner {
-    background: url(banner.png) no-repeat;
+    background: url(assets/img/banner.png) no-repeat;
     background-size: cover;
     background-position: center center;
     height: calc(100vh - 200px);
@@ -266,7 +266,46 @@ li a:hover {
     color: black;
 }
 
+.logos {
+    overflow: hidden;
+    padding: 60px 0;
+    background: white;
+    white-space: nowrap;
+    position: relative;
+}
 
+.logos a {
+    text-decoration: none;
+}
+
+.logos:before {
+    left: 0;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
+}
+
+.logos:after {
+    right: 0;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
+}
+
+.logos:hover .logos-slide {
+    animation-play-state: paused;
+}
+
+.logos-slide {
+    display: inline-block;
+    animation: 35s slide infinite linear;
+}
+
+.logos-slide img {
+    max-width: 200px;
+    margin: 0 30px;
+}
+
+footer {
+    background-color: #28285e;
+    color: white;
+}
 
 @media (max-width: 952px) {
     .enlace {
@@ -322,6 +361,18 @@ li a:hover {
         display: none;
     }
 
+    footer .container #about-us {
+        width: 33% !important;
+    }
+
+    footer .container #follow-us {
+        padding-left: 0 !important;
+    }
+
+    footer .container #follow-us #rrss-logos {
+        display: block !important;
+    }
+
     .checkbtn {
         display: block;
     }
@@ -358,4 +409,14 @@ li a:hover {
     }
 
 
+}
+
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
 }
