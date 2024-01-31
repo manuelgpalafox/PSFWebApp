@@ -56,7 +56,7 @@ nav {
     align-items: center;
 }
 
-.card{
+.card {
     background-color: transparent;
     border: none;
 }
@@ -205,7 +205,6 @@ li a:hover {
     background-color: #2b3990;
 }
 
-.card:hover h3,
 .card:hover h3 {
     color: #2b3990;
 }
@@ -235,13 +234,39 @@ li a:hover {
     background-color: #f2f0f1ff;
 }
 
-#our-process .container .container .card{
+#our-process .container .container .card {
     width: 33%;
     height: 250px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
+#winners {
+    background-color: #f2f0f1ff;
+}
+
+#winners .circle {
+    background-color: #f2f0f1ff;
+}
+
+#winners .ring {
+    background-color: #5090ccff;
+}
+
+#winners .figure {
+    background-color: #5090ccff;
+}
+
+#winners .card {
+    min-width: 33%;
+}
+
+#winners .card h3 {
+    color: black;
+}
+
+
 
 @media (max-width: 952px) {
     .enlace {
@@ -253,6 +278,10 @@ li a:hover {
     }
 
     #categories-baloons {
+        display: block !important;
+    }
+
+    #winners-baloons {
         display: block !important;
     }
 
